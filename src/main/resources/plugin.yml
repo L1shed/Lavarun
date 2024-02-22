@@ -1,0 +1,4 @@
+name: Lavarun
+version: '${project.version}'
+main: me.lished.lavarun.Lavarun
+api-version: '1.20'
