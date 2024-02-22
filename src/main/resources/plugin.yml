@@ -2,3 +2,9 @@ name: Lavarun
 version: '${project.version}'
 main: me.lished.lavarun.Lavarun
 api-version: '1.20'
+libraries:
+  - org.jetbrains.kotlin:kotlin-maven-plugin:1.9.22
+commands:
+  lavarun:
+    aliases:
+      - lr
