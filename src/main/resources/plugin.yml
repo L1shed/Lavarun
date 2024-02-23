@@ -16,4 +16,4 @@ commands:
     description: Leave
   start:
     description: Start
-permissions: {}
+#permissions: {}
