@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack
 
 class LavarunPlayer(plugin: Gamesys, player: Player): GamePlayer(plugin, player) {
     override fun getDefaultGameMode(): GameMode {
-        return GameMode.ADVENTURE
+        return GameMode.SPECTATOR
     }
 
     override fun getGameItems(): HashMap<Int, ItemStack> {

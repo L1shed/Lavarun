@@ -6,6 +6,7 @@ import net.minecord.gamesys.Gamesys
 import net.minecord.gamesys.game.Game
 import net.minecord.gamesys.system.System
 import org.bukkit.Bukkit
+import org.bukkit.Location
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
@@ -25,7 +26,9 @@ class Lavarun : Gamesys() {
             "test" to arrayListOf(Vector(0, 90, 0))
         )
 
-        system.createGame(this, system.createArena("test", File("world"), spawn))
+        gamePortalManager.portal = system.createGamePortal(this, Location(Bukkit.getWorld("world"), 340.0,90.0,84.0))
+        system.createGame(this, system.createArena("arena1", File(dataFolder,"/arenas/arena11"), spawn))
+//        system.createGamePortal(this, Location(Bukkit.getWorld("world"), 0.0,90.0,0.0))
     }
 
 //    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
