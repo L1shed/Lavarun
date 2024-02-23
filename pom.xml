@@ -108,6 +108,10 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
+      <repository>
+          <id>enginehub-maven</id>
+          <url>https://maven.enginehub.org/repo/</url>
+      </repository>
   </repositories>
 
   <dependencies>

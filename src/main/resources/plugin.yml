@@ -4,7 +4,14 @@ main: me.lished.lavarun.Lavarun
 api-version: '1.20'
 libraries:
   - org.jetbrains.kotlin:kotlin-maven-plugin:1.9.22
+author: Lished
+depend:
+  -
 commands:
-  lavarun:
-    aliases:
-      - lr
+  join:
+    description: Join
+  leave:
+    description: Leave
+  start:
+    description: Start
+permissions: {}
