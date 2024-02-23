@@ -15,8 +15,6 @@ import java.io.File
 class Lavarun : Gamesys() {
     override val system: System by lazy { LavarunSystem(this) }
 
-    private lateinit var game: Game
-
     override fun onEnable() {
         super.onEnable()
 
@@ -27,13 +25,13 @@ class Lavarun : Gamesys() {
             "test" to arrayListOf(Vector(0, 90, 0))
         )
 
-        game = system.createGame(this, system.createArena("test", File("world"), spawn))
+        system.createGame(this, system.createArena("test", File("world"), spawn))
     }
 
-    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
-        val gamePlayer = system.createGamePlayer(this, sender as Player)
-        gamePlayer.game = game
-        game.onGameStart()
-        return super.onCommand(sender, command, label, args)
-    }
+//    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
+//        val gamePlayer = system.createGamePlayer(this, sender as Player)
+//        gamePlayer.game = game
+//        game.onGameStart()
+//        return super.onCommand(sender, command, label, args)
+//    }
 }
