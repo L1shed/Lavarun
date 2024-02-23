@@ -6,9 +6,7 @@ import net.minecord.gamesys.Gamesys
 import net.minecord.gamesys.game.Game
 import net.minecord.gamesys.system.System
 import org.bukkit.Bukkit
-import org.bukkit.Location
 import org.bukkit.command.Command
-import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import org.bukkit.util.Vector
